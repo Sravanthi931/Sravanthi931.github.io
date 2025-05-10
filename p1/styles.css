@@ -23,11 +23,12 @@ header a{
 .row{
     display:flex;
     justify-content:space-around;
+    flex-wrap:wrap;
     padding:20px;
 
 }
 .box{
-    width:500px;
+    width:600px;
     padding: 50px;
 }
 .btn-Signup {
