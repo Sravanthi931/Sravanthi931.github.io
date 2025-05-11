@@ -58,6 +58,7 @@ header a{
 .box {
     width: 500px;
     padding: 30px;
+    transition: transform .5s;
 }
 
 .btn-Signup{
@@ -136,6 +137,7 @@ header a{
     flex-wrap: wrap;
     margin: 30px auto;
     padding: 20px;
+    
 }
 
 
@@ -148,6 +150,7 @@ header a{
     margin: 10px;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
     text-align: center;
+    
 }
 #about{
     background-color:#D3D3D3;
@@ -163,6 +166,7 @@ header a{
     line-height: 1.6;
     font-size: 18px;
     text-align: center;
+   
 }
 #contact{
     background-color:#f49a8d;
@@ -204,5 +208,8 @@ header a{
     font-size: 28px;
     margin-top: 40px;
     font-weight: bold;
+}
+.box:hover {
+    transform: scale(1.1,1.1);
 }
 
