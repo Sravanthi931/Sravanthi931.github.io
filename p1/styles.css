@@ -98,6 +98,7 @@ header a{
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 30px;
+
 }
 
 .project-card {
@@ -212,4 +213,5 @@ header a{
 .box:hover {
     transform: scale(1.1,1.1);
 }
+
 
