@@ -111,16 +111,23 @@ header a{
 
 .demo-button {
     padding: 8px 16px;
-    background-color: #eee;
+    background-color: teal;
     border: 1px solid #000;
     border-radius: 8px;
     cursor: pointer;
+    color:white;
+}
+#services{
+    background-color:#13294B;
+    margin: 0;
+  padding: 40px 20px;
 }
 .section-heading {
     text-align: center;
     font-size: 28px;
     margin-top: 40px;
     font-weight: bold;
+    color: white;
 }
 
 .services-container {
@@ -131,9 +138,10 @@ header a{
     padding: 20px;
 }
 
+
 .service-card {
-    background-color: #fdfdfd;
-    border: 2px solid #ccc;
+    background-color:white;
+    border: 2px solid black;
     border-radius: 16px;
     width: 250px;
     padding: 20px;
@@ -141,7 +149,11 @@ header a{
     box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
     text-align: center;
 }
-
+#about{
+    background-color:#D3D3D3;
+     margin: 0;
+  padding: 40px 20px;
+}
 .about-container {
     max-width: 700px;
     margin: 30px auto;
@@ -151,6 +163,11 @@ header a{
     line-height: 1.6;
     font-size: 18px;
     text-align: center;
+}
+#contact{
+    background-color:#f49a8d;
+     margin: 0;
+  padding: 40px 20px;
 }
 
 .contact-container {
@@ -168,16 +185,6 @@ header a{
     max-width: 500px;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-}
-
 .contact-form button {
     padding: 10px 20px;
     background-color: #4caf50;
@@ -190,5 +197,12 @@ header a{
 
 .contact-form button:hover {
     background-color: #45a049;
+}
+.about-heading{
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 40px;
+    font-weight: bold;
 }
 
