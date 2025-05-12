@@ -53,6 +53,7 @@ header a{
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
+    align-items: center;
 }
 
 .box {
@@ -105,9 +106,10 @@ header a{
     background-color: white;
     border: 2px solid black;
     border-radius: 20px;
-    width: 250px;
-    padding: 20px;
-    margin: 10px;
+    width: 300px;
+    padding: 28px 24px;
+    margin-top: 12px;
+    margin-bottom:16px;
     text-align: center;
     box-sizing: border-box;
 }
@@ -119,7 +121,7 @@ header a{
     border-radius: 8px;
     cursor: pointer;
     color:white;
-    margin-top:20px;
+    margin-top:16px;
     justify-content: space-between;
 }
 #services{
@@ -159,7 +161,7 @@ header a{
 #about{
     background-color:#D3D3D3;
      margin: 0;
-  padding: 40px 20px;
+  padding: 30px 20px;
 }
 .about-container {
     max-width: 700px;
@@ -222,5 +224,27 @@ header a{
 .p{
     margin-top: 5px;
     line-height: 1.4;
+}
+.p-image{
+    width: 50%;
+    height: 40%;;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    align-items: center;
+     margin: 12px auto; 
+    display: block;
+}
+.pro-image{
+    width: 120px; 
+    height: 120px; 
+    border-radius: 100%; 
+    display: block;
+    margin: 0 auto 15px; 
+    margin-top: 40px;
+     object-fit: cover;
+    object-position: center; 
+}
+.about-heading{
+    margin-top:10px;
 }
 
