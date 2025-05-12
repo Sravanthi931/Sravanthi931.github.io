@@ -109,6 +109,7 @@ header a{
     padding: 20px;
     margin: 10px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .demo-button {
@@ -118,6 +119,8 @@ header a{
     border-radius: 8px;
     cursor: pointer;
     color:white;
+    margin-top:20px;
+    justify-content: space-between;
 }
 #services{
     background-color:#13294B;
@@ -213,5 +216,11 @@ header a{
 .box:hover {
     transform: scale(1.1,1.1);
 }
-
+.h{
+    margin-top:5px;
+}
+.p{
+    margin-top: 5px;
+    line-height: 1.4;
+}
 
