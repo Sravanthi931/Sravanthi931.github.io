@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('img/background-pattern.jpg'); 
+  background-image: url('images/backgrndd.png'); 
   background-size: cover;
   background-position: center;
   background-repeat:repeat;
@@ -27,7 +27,7 @@ header {
     margin: auto
 }
  .search {
-  background-color: rgb(120, 196, 188);
+  background-color: rgb(191, 204, 203);
   border-radius: 20px;
   width: 500px;
   display: flex;
