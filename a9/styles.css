@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #f9d423, #ff4e50);
+  background-color: darkgreen;
   font-family: 'Segoe UI', sans-serif;
 }
 
