@@ -141,7 +141,7 @@
         <img src="${fruit.image}" alt="${fruit.name}">
         <div class="card-body">
           <div class="fruit-name">${fruit.name}</div>
-          <div class="price">₹${fruit.price || 'N/A'}</div>
+          <div class="price">${fruit.price !== 'N/A' ? '₹' + fruit.price : 'N/A'}</div>
         </div>
       `;
 
