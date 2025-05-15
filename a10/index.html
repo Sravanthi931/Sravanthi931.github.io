@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fresh Fruits</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #fffce4, #ffe3e3);
+    }
+
+    header {
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+      color: white;
+      text-align: center;
+      padding: 30px;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+
+    .form-container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .form-container input {
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 200px;
+      font-size: 1em;
+    }
+
+    .form-container button {
+      padding: 10px 20px;
+      background-color: #ff7e5f;
+      border: none;
+      color: white;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .form-container button:hover {
+      background-color: #e06750;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 220px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .fruit-name {
+      font-size: 1.2em;
+      color: #e65100;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      font-size: 1em;
+      color: #4caf50;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Fresh Fruits</header>
+
+  <div class="form-container">
+    <input type="text" id="fruitName" placeholder="Enter fruit name">
+    <input type="text" id="fruitURL" placeholder="Enter image URL">
+    <button onclick="addFruit()">Add Fruit</button>
+  </div>
+
+  <div class="container" id="fruitContainer">
+  </div>
+
+  <script>
+    const fruits = [
+      {
+        name: "Apple",
+        price: 120,
+        image: "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg"
+      },
+      {
+        name: "Banana",
+        price: 40,
+        image: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg"
+      },
+      {
+        name: "Orange",
+        price: 60,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg"
+      },
+      {
+        name: "Mango",
+        price: 100,
+        image: "https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg"
+      }
+    ];
+
+    const container = document.getElementById("fruitContainer");
+
+    function createCard(fruit) {
+      const card = document.createElement("div");
+      card.className = "card";
+
+      card.innerHTML = `
+        <img src="${fruit.image}" alt="${fruit.name}">
+        <div class="card-body">
+          <div class="fruit-name">${fruit.name}</div>
+          <div class="price">₹${fruit.price || 'N/A'}</div>
+        </div>
+      `;
+
+      container.appendChild(card);
+    }
+    fruits.forEach(fruit => createCard(fruit));
+
+    function addFruit() {
+      const name = document.getElementById("fruitName").value.trim();
+      const url = document.getElementById("fruitURL").value.trim();
+
+      if (name === "" || url === "") {
+        alert("Please enter both name and image URL.");
+        return;
+      }
+
+      const newFruit = {
+        name: name,
+        price: "N/A",
+        image: url
+      };
+
+      createCard(newFruit);
+      document.getElementById("fruitName").value = "";
+      document.getElementById("fruitURL").value = "";
+    }
+  </script>
+
+</body>
+</html>
