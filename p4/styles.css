@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+  font-family: sans-serif;
+}
+
+.atm-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px gray;
+  text-align: center;
+}
+
+input {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 16px;
+}

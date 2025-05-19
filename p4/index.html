@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Bank ATM</h1>
-    <hr />
-    <script src="index.js"></script>
-  </body>
+<html>
+<head>
+  <title>ATM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="atm-container">
+    <h2>Bank ATM</h2>
+    <input type="text" id="cardNumber" placeholder="Card Number">
+    <input type="password" id="pin" placeholder="PIN">
+    <button onclick="submit()">Submit</button>
+    <p id="message"></p>
+  </div>
+  <script src="index.js"></script>
+</body>
 </html>
