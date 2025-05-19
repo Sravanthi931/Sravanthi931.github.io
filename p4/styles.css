@@ -1,68 +1,47 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  background: linear-gradient(to right, #667eea, #764ba2);
+  font-family: 'Segoe UI', sans-serif;
+ background: linear-gradient(to right, #11998e, #38ef7d);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
 }
 
-.atm-container {
-  background: #ffffff;
-  padding: 40px 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  width: 300px;
+.atm-box, .welcome-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.atm-container:hover {
-  transform: scale(1.03);
-}
-
-.atm-container h2 {
-  margin-bottom: 20px;
-  color: #333;
-  font-size: 24px;
+  width: 300px;
 }
 
 input {
-  width: 100%;
-  padding: 12px;
-  margin: 12px 0;
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 8px;
-  transition: border 0.3s;
   font-size: 16px;
-}
-
-input:focus {
-  border-color: #764ba2;
-  outline: none;
 }
 
 button {
-  background: #764ba2;
+  padding: 10px 20px;
+  background-color: teal;
   color: white;
   border: none;
-  padding: 12px;
-  width: 100%;
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
 button:hover {
-  background: #5a3e96;
+  background-color: darkslategray;
 }
 
-#message {
-  margin-top: 15px;
-  font-weight: bold;
-  font-size: 16px;
-  color: #333;
+#errorMsg {
+  color: red;
+  margin-top: 10px;
 }
